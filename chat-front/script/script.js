@@ -91,7 +91,7 @@ const handleLogin = (event) => {
     login.style.display = "none"
     chat.style.display = "flex"
 
-    websocket = new WebSocket("ws://localhost:8080")
+    websocket = new WebSocket("wss://chat-back-hx0r.onrender.com")
     websocket.onmessage = processMessage
     // quando websocket estiver aberto 
     // websocket.onopen = () => 
